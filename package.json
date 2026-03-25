@@ -1,5 +1,5 @@
 {
-  "name": "@docbook/date-grid",
+  "name": "date-grid",
   "version": "0.0.1",
   "description": "Generic date layout engine for Docbook",
   "type": "module",
@@ -26,12 +26,6 @@
     "build:js": "vite build --config vite.config.ts",
     "build:types": "tsc -p tsconfig.build.json",
     "test": "vitest run src/index.test.ts"
-  },
-  "devDependencies": {
-    "@types/node": "^22.13.10",
-    "typescript": "^5.8.2",
-    "vite": "^5.4.10",
-    "vitest": "^2.1.5"
   },
   "dependencies": {
     "date-fns": "^4.1.0"

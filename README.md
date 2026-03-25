@@ -1,11 +1,11 @@
-# @docbook/date-grid
+# date-grid
 
 Framework-agnostic date layout engine for building calendar-like interfaces.
 
 ## Install
 
 ```bash
-npm install @docbook/date-grid
+npm install date-grid
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ import {
   fillAdjacentDays,
   groupByMonth,
   splitRows,
-} from '@docbook/date-grid';
+} from 'date-grid';
 
 const dates = buildRange({
   start: new Date('2026-03-01T00:00:00.000Z'),

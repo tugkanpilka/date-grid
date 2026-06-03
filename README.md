@@ -56,9 +56,12 @@ const sections = addWeekNumbers(
 
 ## Pipeline
 
-```
-buildRange  →  groupByMonth | groupByWeek  →  fillAdjacentDays  →  splitRows  →  addWeekNumbers
-  Date[]              Section[]                   Section[]         Section[]      Section[]
+```mermaid
+flowchart LR
+  A["buildRange<br/><code>Date[]</code>"] --> B["groupByMonth | groupByWeek<br/><code>Section[]</code>"]
+  B --> C["fillAdjacentDays<br/><code>Section[]</code>"]
+  C --> D["splitRows<br/><code>Section[]</code>"]
+  D --> E["addWeekNumbers<br/><code>Section[]</code>"]
 ```
 
 Each stage is a pure function that returns a new array. Stages are composable and order-dependent.

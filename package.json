@@ -18,6 +18,8 @@
     "README.md",
     "LICENSE"
   ],
+  "license": "MIT",
+  "author": "Tuğkan Pilka <tugkan@pilka.com.tr>",
   "publishConfig": {
     "access": "public"
   },
